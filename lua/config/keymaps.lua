@@ -23,7 +23,22 @@ vim.api.nvim_set_keymap(
   "n",
   "<leader>jd",
   "<cmd>FlutterRun --flavor development --target lib/main_development.dart<CR>",
-  { noremap = true, silent = true, desc = "Run Production Flavor" }
+  { noremap = true, silent = true, desc = "Run Development Flavor" }
+)
+-- Flutter run staging
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>js",
+  "<cmd>FlutterRun --flavor staging --target lib/main_staging.dart<CR>",
+  { noremap = true, silent = true, desc = "Run Staging Flavor" }
+)
+
+-- Flutter run uat
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>ju",
+  "<cmd>FlutterRun --flavor uat --target lib/main_uat.dart<CR>",
+  { noremap = true, silent = true, desc = "Run Uat Flavor" }
 )
 
 -- Flutter run production

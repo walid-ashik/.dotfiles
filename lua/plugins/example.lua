@@ -71,6 +71,11 @@ return {
     },
   },
 
+  -- add telescope image preview
+  {
+    "nvim-telescope/telescope-media-files.nvim",
+  },
+
   -- add telescope-fzf-native
   {
     "telescope.nvim",
@@ -80,6 +85,7 @@ return {
       config = function()
         require("telescope").load_extension("fzf")
         require("telescope").load_extension("flutter")
+        require("telescope").load_extension("media_files")
       end,
     },
   },
