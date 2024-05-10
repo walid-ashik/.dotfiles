@@ -7,3 +7,6 @@ vim.opt.relativenumber = false
 
 -- show hidden files in NERDTree
 vim.g.NERDTreeShowHidden = 1
+
+-- disable auto format on save
+vim.g.autoformat = false
